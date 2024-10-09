@@ -13,5 +13,12 @@ namespace WebApiGITDay12.Controllers
         {
             return Ok(DateTime.Now);
         }
+
+        [HttpGet]
+        [Route("time")]
+        public IActionResult GetResult()
+        {
+            return Ok(DateTime.Now.ToLongTimeString());
+        }
     }
 }
